@@ -3,7 +3,7 @@ body {
 	font-family: 'Rubik', sans-serif;
 }
 header {
-	border-top: calc(1vw + 1vh) solid #d12148;
+	border-top: 10px solid #d12148;
 	background-color: #35586C;
 	margin: 0px auto;
 }
@@ -24,7 +24,7 @@ nav a:hover {
 	text-decoration: underline;
 }
 nav ul {
-	/*display: none;*/
+	display: none;
 	width: 100%;
 	position: absolute;
 	right: 0;
@@ -188,7 +188,7 @@ textarea {
 	grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
 	margin: 10px auto;
 	text-align: center;
-	width: 90%;
+	width: 70%;
 	/*min-height: 75vh;*/
 }
 .mainColumn img{
@@ -309,10 +309,6 @@ ul {
 	}
 	.column img {
 		width: 95%;
-	}
-	
-	header {
-		border-top: 16px solid #d12148;
 	}
 	
 	video, audio {
