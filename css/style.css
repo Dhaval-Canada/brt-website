@@ -3,8 +3,8 @@ body {
 	font-family: 'Rubik', sans-serif;
 }
 header {
-	border-top: 12px solid #d12148;
-	background-color: turquoise;
+	border-top: calc(1vw + 1vh) solid #d12148;
+	background-color: #35586C;
 	margin: 0px auto;
 }
 header img {
@@ -17,23 +17,23 @@ nav {
 	text-decoration: none;
 }
 nav a {
-	color: black;
+	color: whitesmoke;
 	text-decoration: none;
 }
 nav a:hover {
 	text-decoration: underline;
 }
 nav ul {
-	display: none;
+	/*display: none;*/
 	width: 100%;
 	position: absolute;
 	right: 0;
-	top: 20%;
 	list-style: none;
+	
 }
 nav li {
 	text-align: right;
-	padding-top: 2%;
+	color: whitesmoke;
 }
 nav:hover ul {
 	display: block;
@@ -45,14 +45,11 @@ img {
 h1 {
 	text-align: center;
 	margin: 10px auto;
-	font-size: 28px;
 }
 h2{
 	font-weight: 300;
-	font-size: 20px;
 }
 h3{
-	font-size: 16px;
 	padding: 2%;
 }
 h3, h4, h5 {
@@ -61,8 +58,8 @@ h3, h4, h5 {
 h3, h5 {
 	font-weight: 300;
 }
-h4 {
-	font-size: 12px;
+h3,li {
+	font-size: 75%;
 }
 footer {
 	background-color: #d12148;
@@ -70,8 +67,8 @@ footer {
 	text-align: center;
 }
 p {
-	font-size: 8px;
 	margin: 0 auto;
+	font-size: 50%;
 }
 video, audio {
 	width: 100%;
@@ -125,9 +122,6 @@ fieldset {
 	border: 2px solid #35586C;
 	margin: 20px auto;
 	padding-top: 15px;
-}
-legend {
-	font-size: 100%;
 }
 select {
 	background: transparent;
@@ -232,6 +226,7 @@ textarea {
 .inLine {
 	display: inline;
 	text-align: justify;
+	font-size: calc(1vw + 1vh);
 }
 ul {
 	padding: 0px;
@@ -244,6 +239,9 @@ ul {
 	margin: 10px auto;
 	text-align: center;
 	width: 90%;
+}
+.text-responsive {
+  font-size: calc(40% + 1vw + 1vh);
 }
 /*==================*/
 
@@ -259,16 +257,14 @@ ul {
 	 {
 		grid-template-columns: repeat(auto-fit, minmax(51%, 1fr));
 	}
-	header {
-		border-top: 20px solid #d12148;
-	}
+	
 	header img{
 		width: 60%;
 	}
 	nav ul {
 		display: inline-block;
 		padding-right: 20px;
-		padding-top: 15%;
+		padding-top: 30%;
 		text-align: right;
 	}
 	nav li {
@@ -309,14 +305,12 @@ ul {
 		width: 50%;
 	}
 	nav ul {
-		padding-top: 12%;
+		padding-top: 25%;
 	}
 	.column img {
 		width: 95%;
 	}
-	h1{
-		font-size: 32px;
-	}
+	
 	header {
 		border-top: 16px solid #d12148;
 	}
